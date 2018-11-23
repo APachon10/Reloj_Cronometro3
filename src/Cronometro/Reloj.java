@@ -6,10 +6,13 @@ import java.awt.event.ActionListener;
 import java.text.DecimalFormat;
 import java.util.Calendar;
 
+import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.Timer;
 
-public class Reloj extends JTextField implements ActionListener{
+public class Reloj extends JPanel implements ActionListener{
+	private JTextField minutos_text;
+	private JTextField segundos_text;
 	public Reloj() {
 		Timer t = new Timer(1000, this);
 		t.start();
@@ -21,15 +24,6 @@ public class Reloj extends JTextField implements ActionListener{
 	}
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		Calendar calendario = Calendar.getInstance();
 		
-		int hora = calendario.get(Calendar.HOUR);
-		int minutos = calendario.get(Calendar.MINUTE);
-		int segundos = calendario.get(Calendar.SECOND);
-		
-		DecimalFormat df = new DecimalFormat("00");
-		
-		String hora_dia = hora+":"+df.format(minutos)+":"+df.format(segundos);
-		this.setText(hora_dia);
 	}
 }
