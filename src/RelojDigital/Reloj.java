@@ -1,4 +1,4 @@
-package Pruebas;
+package RelojDigital;
 
 import java.awt.Font;
 import java.awt.event.ActionEvent;

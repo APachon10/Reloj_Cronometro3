@@ -1,4 +1,4 @@
-package Pruebas;
+package RelojDigital;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
