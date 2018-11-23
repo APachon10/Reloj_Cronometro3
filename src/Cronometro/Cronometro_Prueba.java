@@ -15,12 +15,12 @@ import javax.swing.GroupLayout.Alignment;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import java.awt.Color;
 
-public class RelojDigital_Prueba extends JTextField implements ActionListener {
+public class Cronometro_Prueba extends JTextField implements ActionListener {
 	private JFrame ventanaReloj;
 	private JLabel label_reloj;
 	private Reloj Reloj_text;
 	
-	public RelojDigital_Prueba() {
+	public Cronometro_Prueba() {
 		ventanaReloj = new JFrame("Reloj Digital ");
 		ventanaReloj.getContentPane().setForeground(Color.BLACK);
 		ventanaReloj.getContentPane().setBackground(Color.WHITE);
@@ -60,7 +60,7 @@ public class RelojDigital_Prueba extends JTextField implements ActionListener {
 		ventanaReloj.getContentPane().setLayout(groupLayout);
 	}
 	public static void main(String[] args) {
-		new RelojDigital_Prueba();
+		new Cronometro_Prueba();
 	}
 	@Override
 	public void actionPerformed(ActionEvent e) {
