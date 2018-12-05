@@ -15,7 +15,7 @@ import javax.swing.GroupLayout.Alignment;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import java.awt.Color;
 
-public class RelojDigital_Prueba extends JTextField implements ActionListener {
+public class RelojDigital_Prueba extends JFrame{
 	private JFrame ventanaReloj;
 	private JLabel label_reloj;
 	private Reloj Reloj_text;
@@ -47,7 +47,7 @@ public class RelojDigital_Prueba extends JTextField implements ActionListener {
 					.addContainerGap(76, Short.MAX_VALUE))
 		);
 		groupLayout.setVerticalGroup(
-			groupLayout.createParallelGroup(Alignment.LEADING)
+			groupLayout.createParallelGroup(Alignment.LEADING) 
 				.addGroup(Alignment.TRAILING, groupLayout.createSequentialGroup()
 					.addContainerGap(216, Short.MAX_VALUE)
 					.addComponent(lblRelojDigital)
@@ -61,9 +61,5 @@ public class RelojDigital_Prueba extends JTextField implements ActionListener {
 	}
 	public static void main(String[] args) {
 		new RelojDigital_Prueba();
-	}
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		
 	}
 }
